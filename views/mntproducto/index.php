@@ -13,16 +13,27 @@
         <div class="row">
             <div class="col-md-12">
                 <h1>Subir normas Tec-export</h1>
-                <div class="form_group">
-                    <div class="dropzone">
-                        <div class="dz-defaut dz-message">
-                            <!-- <span>Arrastra los archivos aquí para subirlos</span> -->
-                            <button class="dz-button" type="button">
-                                <img class="img-icon" src="../../assets/upload.png" alt="icon">
-                            </button>
+                <div class="form-group">
+                <form method="post" id="producto_form">
+                    <label class="form-label" for="rule_names" >Nombre de la norma</label>
+                    <input  type="text" name="rule_name" id="rule_name" class="form-control" placeholder="Ingrese el nombre de la norma">
+                   
+                </div>
+                <div style="height: 20px;"></div>
+                
+                    <div class="form-group">
+                        <div class="dropzone">
+                            <div class="dz-defaut dz-message">
+                                <!-- <span>Arrastra los archivos aquí para subirlos</span> -->
+                                <button class="dz-button" type="button">
+                                    <img class="img-icon" src="../../assets/upload.png" alt="icon">
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div style="height: 20px;"></div>
+                    <button type="submit" class="btn btn-primary"> Guardar</button>
+                </form>
             </div>
         </div>
     </div>
