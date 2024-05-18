@@ -20,7 +20,7 @@
                     $tmp_filename = $_FILES["file"]["tmp_name"][$index];
                     $destino = $ruta . $filename;
                     foreach($datos as $row){
-                        $producto->insert_file($row["rule_id"], $filename);
+                        $producto->insert_file($row["rule_id"], $destino); // destino si se quiere obtener el path
                     }
                     
 
